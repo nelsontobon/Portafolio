@@ -1,0 +1,126 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 300;
+    color: orange;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+}
+
+.texto-negro {
+	color: #000;
+}
+/* ------------------------------- */
+/* fullpage.js */
+
+#fp-nav ul li a span{
+    background: orange;
+}
+
+#fp-nav ul li .fp-tooltip{
+    color: orange;
+}
+/* ------------------------------- */
+/* menu-navegacion */
+.nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav li,
+.nav a{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald',sans-serif;
+    font-size: 19px;
+    color: #c2c2c2;
+    transition: .5s ease;
+}
+
+.nav li.active{
+    border-bottom:1px solid orange;
+}
+
+.nav li.active a,
+.nav li:hover a{
+    color: orange;
+}
+
+/* ------------------------------- */
+/* clases js flechas slide */
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev{
+    top: 95%;
+}
+
+.fp-controlArrow.fp-prev{
+    left: 80%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #000 transparent transparent;
+}
+
+.fp-controlArrow.fp-next{
+    right: 10%;
+    border-width: 20px 0px 20px 20px;
+    border-color: transparent transparent transparent #000;
+}
+
+
+/* ------------------------------- */
+
+.header{
+    background: url('../img/bg-imagen.jpeg');
+    background-position: center;
+}
+
+.header .contenedor-icono{
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: icono 1s ease infinite;
+}
+
+@keyframes icono{
+    0%{
+        transform: translateY(20px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+/* ------------------------------- */
