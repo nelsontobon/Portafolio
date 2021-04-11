@@ -1,0 +1,31 @@
+.informacion{
+    .informacion-content{
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        background-image: $background-ClToOs;
+
+        .titulo-content{
+            width: 50%;
+            height: 100%;
+
+            .titulo{
+                color: white;
+                font-size: 50px;
+                margin-top: 50%;
+                text-align: center;
+            }
+        }
+    
+        .descripcion{
+            float: right;
+            width: 50%;
+            color: white;
+        }
+        
+    
+    }
+}

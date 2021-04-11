@@ -1,0 +1,39 @@
+/* menu-navegacion */
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+
+    .marca{
+        font-family: $ft-Oxygen-mono;
+        font-size: 30px;
+    }
+
+    li,
+    a {
+        display: inline-block;
+        margin: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $ft-Oxygen-mono;
+        font-weight: 500;
+        font-size: 19px;
+        color: white;
+        transition: .5s ease;
+    }
+
+    li.active {
+        border-bottom: 1px solid orange;
+    }
+
+    li.active a,
+    li:hover a {
+        color: orange;
+    }
+
+}

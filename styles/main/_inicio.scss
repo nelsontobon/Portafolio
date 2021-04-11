@@ -1,0 +1,34 @@
+.inicio{
+    background-image: $background-OsToCl;
+
+    .inicio-content{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .inicio-img{
+            width: 600px;
+            border-radius: 20px;
+        }
+        .nombre{
+            padding-left: 10%;
+
+            .titulo{
+                color: white;
+                font-size: 100px;
+                margin-top: 20px;
+            }
+    
+            .titulo2{
+                color: white;
+                font-size: 50px;
+                font-weight: 100;
+                margin-top: 20px;
+            }
+        }
+        
+    }
+    
+}

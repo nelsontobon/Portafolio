@@ -1,0 +1,58 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    font-family:  $ft-Oxygen-mono;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* ------------------------------- */
+/* fullpage.js */
+
+#fp-nav ul li a span{
+    background: white;
+}
+
+#fp-nav ul li .fp-tooltip{
+    color: white;
+}
+
+/* ------------------------------- */
+.contenedor-icono{
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 40px;
+    animation: icono 1s ease infinite;
+
+    a{
+        color: white;
+    }
+}
+
+@keyframes icono{
+    0%{
+        transform: translateY(20px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+/* ------------------------------- */
