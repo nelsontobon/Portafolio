@@ -444,75 +444,8 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(180deg, #00F0B8 0%, #0000FE 50%);
 }
 
-.proyectos .proyectos-titulo {
+.proyectos .proyectos-content .proyectos-titulo {
   color: white;
   font-size: 50px;
-  margin: 100px 0 100px 0;
-}
-
-.proyectos .proyectos-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 100%;
-  height: 70%;
-}
-
-.proyectos .proyectos-content .proyectos-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 35%;
-  background-color: white;
-  border-color: 10px solid white;
-}
-
-.proyectos .proyectos-content .proyectos-item .item-img {
-  width: 100%;
-}
-
-.proyectos .proyectos-content .proyectos-item .item-titulo {
-  color: #0000FE;
-  margin: 10px auto;
-}
-
-.proyectos .proyectos-content .proyectos-item .item-info {
-  margin: 10px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.proyectos .proyectos-content .proyectos-item .item-info .item-text {
-  width: 70%;
-}
-
-.proyectos .proyectos-content .proyectos-item .item-info .item-icon i {
-  font-size: 100px;
-  color: #00F0B8;
 }
 /*# sourceMappingURL=styles.css.map */
