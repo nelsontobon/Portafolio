@@ -58,11 +58,11 @@
             flex-flow: column wrap;
             justify-content: space-between;
             align-items: center;
-            height: 850px;
+            height: 80%;
 
             .slide-titulo {
                 color: white;
-                font-size: 50px;
+                font-size: $ft-titulo;
                 align-self: center;
             }
 
@@ -78,8 +78,8 @@
                 margin-bottom: 50px;
 
                 .item-link {
-                    width: 30%;
-                    height: 300px;
+                    width: 25%;
+                // }height: 10%;
 
                     .item-img {
                         width: 100%;
@@ -92,11 +92,11 @@
                     color: $cl-blueOscuro;
 
                     h2 {
-                        font-size: calc(100%*2);
+                        font-size: 2vw;
                     }
 
                     h3 {
-                        font-size: calc(100%);
+                        font-size: 1.5vw;
                     }
                 }
             }
@@ -109,11 +109,11 @@
             flex-flow: column wrap;
             justify-content: space-evenly;
             align-items: center;
-            height: 850px;
+            height: 80%;
 
             .slide-titulo {
                 color: white;
-                font-size: 50px;
+                font-size: $ft-titulo;
                 align-self: center;
             }
 
@@ -130,13 +130,13 @@
                     justify-content: space-between;
                     border: 10px solid white;
                     background-color: white;
-                    border-radius: 30px;
+                    border-radius: 2vw;
                     width: 40%;
                     margin-bottom: 20px;
 
                     .item-link {
                         width: 30%;
-                        height: 200px;
+                        // height: 200px;
 
                         .item-img {
                             width: 100%;
@@ -149,11 +149,11 @@
                         color: $cl-blueOscuro;
 
                         h2 {
-                            font-size: calc(100%);
+                            font-size: 1vw;
                         }
 
                         h3 {
-                            font-size: calc(100%);
+                            font-size: 0.8vw;
                         }
                     }
                 }

@@ -33,7 +33,7 @@ var seccionesPagina = new fullpage('#fullpage', {
     // ──────────────────────────────────────────────────
     afterLoad: function (origin, destination) {
         if (destination.anchor == 'contacto') {
-            document.querySelector('.footer').querySelector('h2').style.opacity = 1;
+            document.querySelector('.footer').querySelector('.texto-naranja').style.opacity = 4;
         }
     }
 });
