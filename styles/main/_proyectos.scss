@@ -4,13 +4,13 @@
     .proyectos-titulo {
         color: white;
         font-size: $ft-titulo;
-        margin: 2.5% 0  ;
+        margin: 2.5% 0;
     }
 
     .proyectos-content {
         display: flex;
         flex-flow: row wrap;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-evenly;
         width: 100%;
         height: 70%;
@@ -21,36 +21,66 @@
             justify-content: center;
 
             width: 35%;
-            
-            background-color: white;
-            
 
-            .item-img{
+            background-color: white;
+
+
+            .item-img {
                 width: 100%;
             }
-            
-            .item-titulo{
+
+            .item-titulo {
                 color: $cl-blueOscuro;
                 margin: 1% auto;
             }
 
-            .item-info{
+            .item-info {
                 margin: 1%;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-evenly;
                 font-size: 1vw;
-                .item-text{
+
+                .item-text {
                     width: 70%;
                 }
 
-                .item-icon{
-                    
-                    i{
+                .item-icon {
+
+                    i {
                         font-size: 7vw;
                         color: $cl-blueClaro;
                     }
-                    
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .proyectos {
+        .proyectos-titulo {
+            font-size: $ft-titulo-m;
+        }
+
+        .proyectos-content {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .proyectos-item {
+                width: 50%;
+
+                .item-titulo {
+                    font-size: 3vw;
+                }
+
+                .item-info{
+                    .item-text{
+                        font-size: 1.3vw;
+                    }
                 }
             }
         }

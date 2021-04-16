@@ -1,34 +1,57 @@
-.informacion{
+.informacion {
     background-image: $background-ClToOs;
-    .informacion-content{
+
+    .informacion-content {
         height: 80%;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
-        align-content: center;
-        
 
-        .titulo-content{
+
+
+        .titulo-content {
             width: 50%;
 
-            .titulo{
+            .titulo {
                 color: white;
                 font-size: $ft-titulo;
                 text-align: center;
             }
         }
-    
-        .descripcion{
+
+        .descripcion {
             text-align: center;
             width: 40%;
             color: white;
 
-            p{
+            p {
                 font-size: $ft-parrafo;
             }
         }
-        
-    
+
+
+    }
+}
+
+@media (max-width:768px) {
+    .informacion {
+        .informacion-content {
+            flex-flow: column nowrap;
+
+            .titulo-content {
+                .titulo {
+                    margin: 10% auto;
+                    font-size: $ft-titulo-m;
+                }
+            }
+
+            .descripcion{
+                width: 70%;
+                p{
+                    font-size: 2vw;
+                }
+            }
+        }
     }
 }

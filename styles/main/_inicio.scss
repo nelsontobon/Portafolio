@@ -26,9 +26,34 @@
                 font-size: 3vw;
                 font-weight: 100;
                 margin-top: 20px;
+                
             }
         }
         
     }
     
+}
+
+@media (max-width: 768px) {
+    .inicio{
+        .inicio-content{
+            flex-flow: column nowrap;
+
+            .inicio-img{
+                width: 50%;
+            }
+
+            .nombre{
+                padding-left: 0;
+                margin-top: 15px;
+
+                .titulo{
+                    font-size: 7vw;
+                }
+                .titulo2{
+                    font-size: 4vw;
+                }
+            }
+        } 
+    }
 }

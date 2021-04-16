@@ -90,23 +90,23 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 70;
   width: 100%;
   margin: 0;
-  padding: 10px 20px;
+  padding: 1vw 2vw;
 }
 
 .nav .marca {
   font-family: "Oxygen Mono", monospace;
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 .nav li,
 .nav a {
   display: inline-block;
-  margin: 10px;
+  margin: 1vw;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Oxygen Mono", monospace;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 1vw;
   color: white;
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -119,6 +119,14 @@ h1, h2, h3, h4, h5, h6 {
 .nav li.active a,
 .nav li:hover a {
   color: orange;
+}
+
+@media (max-width: 768px) {
+  .nav li,
+  .nav a {
+    margin: 0.5vw;
+    font-size: 2vw;
+  }
 }
 
 .inicio {
@@ -164,6 +172,28 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+  .inicio .inicio-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .inicio .inicio-content .inicio-img {
+    width: 50%;
+  }
+  .inicio .inicio-content .nombre {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+  .inicio .inicio-content .nombre .titulo {
+    font-size: 7vw;
+  }
+  .inicio .inicio-content .nombre .titulo2 {
+    font-size: 4vw;
+  }
+}
+
 .informacion {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#00F0B8), color-stop(50%, #0000FE));
   background-image: linear-gradient(180deg, #00F0B8 0%, #0000FE 50%);
@@ -184,8 +214,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .informacion .informacion-content .titulo-content {
@@ -206,6 +234,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .informacion .informacion-content .descripcion p {
   font-size: 1vw;
+}
+
+@media (max-width: 768px) {
+  .informacion .informacion-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .informacion .informacion-content .titulo-content .titulo {
+    margin: 10% auto;
+    font-size: 5vw;
+  }
+  .informacion .informacion-content .descripcion {
+    width: 70%;
+  }
+  .informacion .informacion-content .descripcion p {
+    font-size: 2vw;
+  }
 }
 
 /* ------------------------------- */
@@ -291,6 +338,14 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(180deg, #0000FE 50%, #00F0B8 100%);
 }
 
+.educacion .slide-titulo {
+  color: white;
+  font-size: 4vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .educacion .slide1 .slide-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,21 +354,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80%;
-}
-
-.educacion .slide1 .slide-content .slide-titulo {
-  color: white;
-  font-size: 4vw;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  height: 70%;
 }
 
 .educacion .slide1 .slide-content .educacion-item {
@@ -327,18 +374,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   border: 10px solid white;
   background-color: white;
   border-radius: 30px;
   width: 50%;
+  height: 13vw;
   margin-bottom: 50px;
 }
 
 .educacion .slide1 .slide-content .educacion-item .item-link {
   width: 25%;
+  height: 100%;
 }
 
 .educacion .slide1 .slide-content .educacion-item .item-link .item-img {
@@ -367,21 +416,13 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80%;
-}
-
-.educacion .slide2 .slide-content .slide-titulo {
-  color: white;
-  font-size: 4vw;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  height: 70%;
 }
 
 .educacion .slide2 .slide-content .row {
@@ -441,6 +482,57 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8vw;
 }
 
+@media (max-width: 768px) {
+  .educacion {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #0000FE), to(#00F0B8));
+    background-image: linear-gradient(180deg, #0000FE 50%, #00F0B8 100%);
+  }
+  .educacion .slide-titulo {
+    font-size: 5vw;
+  }
+  .educacion .slide1 .slide-content .educacion-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 50%;
+    height: 25%;
+    margin-bottom: 10%;
+  }
+  .educacion .slide1 .slide-content .educacion-item .item-link {
+    width: 30%;
+  }
+  .educacion .slide1 .slide-content .educacion-item .item-content h2 {
+    font-size: 2.5vw;
+  }
+  .educacion .slide1 .slide-content .educacion-item .item-content h3 {
+    font-size: 1.5vw;
+  }
+  .educacion .slide2 .slide-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .educacion .slide2 .slide-content .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .educacion .slide2 .slide-content .row .educacion-item {
+    width: 60%;
+  }
+  .educacion .slide2 .slide-content .row .educacion-item .item-content h2 {
+    font-size: 1.4vw;
+  }
+  .educacion .slide2 .slide-content .row .educacion-item .item-content h3 {
+    font-size: 1vw;
+  }
+}
+
 .proyectos {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#00F0B8), color-stop(50%, #0000FE));
   background-image: linear-gradient(180deg, #00F0B8 0%, #0000FE 50%);
@@ -460,9 +552,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -516,6 +608,36 @@ h1, h2, h3, h4, h5, h6 {
 .proyectos .proyectos-content .proyectos-item .item-info .item-icon i {
   font-size: 7vw;
   color: #00F0B8;
+}
+
+@media (max-width: 768px) {
+  .proyectos .proyectos-titulo {
+    font-size: 5vw;
+  }
+  .proyectos .proyectos-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .proyectos .proyectos-content .proyectos-item {
+    width: 50%;
+  }
+  .proyectos .proyectos-content .proyectos-item .item-titulo {
+    font-size: 3vw;
+  }
+  .proyectos .proyectos-content .proyectos-item .item-info .item-text {
+    font-size: 1.3vw;
+  }
 }
 
 /* ------------------------- */

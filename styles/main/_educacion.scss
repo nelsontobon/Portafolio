@@ -52,34 +52,35 @@
 .educacion {
     background-image: $background-OsToCl;
 
+    .slide-titulo {
+        color: white;
+        font-size: $ft-titulo;
+        align-self: center;
+    }
+
     .slide1 {
         .slide-content {
             display: flex;
             flex-flow: column wrap;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            height: 80%;
-
-            .slide-titulo {
-                color: white;
-                font-size: $ft-titulo;
-                align-self: center;
-            }
+            height: 70%;
 
             .educacion-item {
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 border: 10px solid white;
                 background-color: white;
                 border-radius: 30px;
                 width: 50%;
+                height: 13vw;
                 margin-bottom: 50px;
 
                 .item-link {
                     width: 25%;
-                // }height: 10%;
+                    height: 100%;
 
                     .item-img {
                         width: 100%;
@@ -107,15 +108,10 @@
         .slide-content {
             display: flex;
             flex-flow: column wrap;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
-            height: 80%;
+            height: 70%;
 
-            .slide-titulo {
-                color: white;
-                font-size: $ft-titulo;
-                align-self: center;
-            }
 
             .row {
                 display: flex;
@@ -159,6 +155,70 @@
                 }
             }
 
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .educacion {
+        background-image: $background-OsToCl;
+
+        .slide-titulo {
+            font-size: $ft-titulo-m;
+        }
+
+        .slide1 {
+            .slide-content {
+                // justify-content: space-evenly;
+
+                .educacion-item {
+                    flex-flow: column nowrap;
+                    width: 50%;
+                    height: 25%;
+                    margin-bottom: 10%;
+
+                    .item-link {
+                        width: 30%;
+                    }
+
+                    .item-content {
+                        h2 {
+                            font-size: 2.5vw;
+                        }
+
+                        h3 {
+                            font-size: 1.5vw;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slide2 {
+            .slide-content {
+                align-items: center;
+
+                .row {
+                    flex-flow: column nowrap;
+                    align-items: center;
+
+                    .educacion-item {
+                        width: 60%;
+                        
+                        .item-content {
+                            h2 {
+                                font-size: 1.4vw;
+                            }
+
+                            h3 {
+                                font-size: 1vw;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
