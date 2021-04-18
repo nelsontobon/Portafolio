@@ -14,8 +14,7 @@
 </head>
 
 <body>
-	<nav class="nav">
-
+	<!-- <nav class="nav">
 		<a href="#inicio" class="marca">NELSONTOBON &REG;</a>
 		<ul id="menu" class="menu">
 			<li data-menuanchor="inicio" class="active">
@@ -34,7 +33,47 @@
 				<a href="#contacto">contacto</a>
 			</li>
 		</ul>
-	</nav>
+	</nav> -->
+	<header class="header">
+        <div>
+            <a href="#inicio" class="marca">NELSONTOBON &REG;</a>
+        </div>
+
+        <div class="desplegable">
+            <div>
+                <input type="checkbox" class="menu-check" id="menu">
+
+                <label class="menu-label" for="menu">
+                    <i class="fa fa-bars" id="barras" aria-hidden="true"></i>
+                </label>
+
+                <label class="menu-label1" for="menu">
+                    <i class="far fa-times-circle"></i>
+                </label>
+
+                <nav class="menu-lista">
+                    <ul id="menu" class="menu">
+						<li data-menuanchor="inicio" class="active">
+							<a href="#inicio">Inicio</a>
+						</li>
+						<li data-menuanchor="informacion">
+							<a href="#informacion">Sobre mi</a>
+						</li>
+						<li data-menuanchor="educacion">
+							<a href="#educacion">educacion</a>
+						</li>
+						<li data-menuanchor="proyectos">
+							<a href="#proyectos">Proyectos</a>
+						</li>
+						<li data-menuanchor="contacto">
+							<a href="#contacto">contacto</a>
+						</li>
+					</ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
 
 	<main id="fullpage">
 		<section class="section inicio">
@@ -56,13 +95,15 @@
 		<section class="section informacion">
 			<div class="informacion-content">
 				<div class="titulo-content">
-					<h1 class="titulo">Informacion</h1>
+					<h1 class="titulo">Información</h1>
 				</div>
 				<div class="descripcion">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit laboriosam, blanditiis, dolor
-						itaque molestias, eius sint voluptatibus distinctio veritatis maiores recusandae deleniti
-						mollitia reprehenderit quo voluptate perspiciatis quis sequi numquam.
+						Ingerniero mecatrónico apasionado por el estudio de nuevas tecnologias para el desarrollo de aplicaciones.
+						Cuento con diferentes conocimientos sobre LabVIEW, SQL Server, Python, HTML5, CCS3, JavaScripy, entre otros.
+						<br><br>
+						Tengo experenciencia de 2 años en desarrollo de aplicaciones para reconida empresa del sector textil 
+						y como desarrollador web independiente.
 					</p>
 				</div>
 			</div>
@@ -160,9 +201,8 @@
 					<h2 class="item-titulo">Podcast Channel</h2>
 					<div class="item-info">
 						<p class="item-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quos labore maxime
-							totam sed provident quis odio mollitia, exercitationem quo veniam
-
+							Pagina de inicio para un canal de Podcast,desarrollada unicamente con HTML5 y CSS3, teniendo en cuenta 
+							la adaptacion para los diferentes tipos de dispositivos
 						</p>
 						<a class="item-icon" href="https://github.com/nelsontobon/proyecto_podcast_channel"
 							target="_blank">
@@ -177,9 +217,8 @@
 					<h2 class="item-titulo">Portafolio</h2>
 					<div class="item-info">
 						<p class="item-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quos labore maxime
-							totam sed provident quis odio mollitia, exercitationem quo veniam
-
+							Hoja de vida web, en la cual se usa el concepto de fullpage para el maquetado y muestra 
+							de la informacion
 						</p>
 						<a class="item-icon" href="https://github.com/nelsontobon/Portafolio" target="_blank">
 							<i class="fab fa-github"></i>
@@ -193,11 +232,10 @@
 		</section>
 
 		<footer class="section footer">
-			<h2 class="texto-naranja">Siguenos en Redes Sociales</h2>
+			<h2 class="footer-titulo">Contactame</h2>
 			<p class="redes-sociales">
-				<a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a>
-				<a href="#" class="twitter"><i class="fab fa-twitter-square"></i></a>
-				<a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/nelson-tobon-16586a1b6/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></i></a>
+				<a href="https://github.com/nelsontobon" target="_blank" class="github"><i class="fab fa-github-square"></i></a>
 			</p>
 		</footer>
 

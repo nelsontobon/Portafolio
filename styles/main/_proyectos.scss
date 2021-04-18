@@ -46,12 +46,10 @@
                 }
 
                 .item-icon {
-
                     i {
                         font-size: 7vw;
                         color: $cl-blueClaro;
                     }
-
                 }
             }
         }
@@ -80,6 +78,33 @@
                 .item-info{
                     .item-text{
                         font-size: 1.3vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:415px) {
+    .proyectos {
+        
+        .proyectos-content {
+            .proyectos-item {
+                width: 70%;
+
+                .item-titulo {
+                    font-size: 4vw;
+                }
+
+                .item-info{
+                    .item-text{
+                        font-size: 2vw;  
+                    }
+                    .item-icon {
+                        i {
+                            font-size: 11vw;
+                        }
+    
                     }
                 }
             }

@@ -46,10 +46,23 @@
                 }
             }
 
-            .descripcion{
+            .descripcion {
                 width: 70%;
-                p{
+
+                p {
                     font-size: 2vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:415px) {
+    .informacion {
+        .informacion-content {
+            .descripcion {
+                p {
+                    font-size: 3vw;
                 }
             }
         }

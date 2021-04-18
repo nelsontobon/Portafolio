@@ -10,3 +10,37 @@ $background-ClToOs: linear-gradient(180deg,$cl-blueClaro 0%, $cl-blueOscuro 50%)
 $ft-titulo: 4vw;
 $ft-titulo-m:5vw;
 $ft-parrafo: 1vw;
+
+$ibm_plex_sans_thin: 'IBM Plex Sans', sans-serif;
+$ibm_plex_mono: 'IBM Plex Mono', monospace;
+
+
+
+$hd_height_s : 44px;
+$hd_height_s_list : 225px;
+$hd_bg_color : #0000EC;
+
+@mixin IBMPlexMono-Small {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight:300;
+}
+
+@mixin IBMPlexMono-medium {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+}
+
+@mixin IBMPlexSans-Small {
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+}
+
+@mixin IBMPlexSans-Medium {
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+}
+
+@mixin IBMPlexSans-Semibold {
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+}

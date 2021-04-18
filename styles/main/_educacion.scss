@@ -6,7 +6,7 @@
 // }
 
 .fp-controlArrow.fp-prev {
-    left: 10%;
+    left: 7%;
     border-width: 20px 20px 20px 0;
     border-color: transparent white transparent transparent;
     animation: flechaprev 1s ease infinite;
@@ -163,24 +163,21 @@
 @media (max-width:768px) {
 
     .educacion {
-        background-image: $background-OsToCl;
-
         .slide-titulo {
             font-size: $ft-titulo-m;
         }
 
         .slide1 {
             .slide-content {
-                // justify-content: space-evenly;
 
                 .educacion-item {
                     flex-flow: column nowrap;
                     width: 50%;
-                    height: 25%;
+                    height: 35%;
                     margin-bottom: 10%;
 
                     .item-link {
-                        width: 30%;
+                        width: 40%;
                     }
 
                     .item-content {
@@ -214,6 +211,64 @@
 
                             h3 {
                                 font-size: 1vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:415px) {
+    .fp-controlArrow.fp-prev, .fp-controlArrow.fp-next {
+        top: 90%;
+    }
+
+    .educacion {
+        background-image: $background-OsToCl;
+
+        .slide-titulo {
+            font-size: $ft-titulo-m;
+        }
+
+        .slide1 {
+            .slide-content {
+
+                .educacion-item {
+                    width: 60%;
+                    height: 40%;
+
+                    .item-link {
+                        width: 70%;
+                    }
+
+                    .item-content {
+                        h2 {
+                            font-size: 3vw;
+                        }
+
+                        h3 {
+                            font-size: 2vw;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slide2 {
+            .slide-content {
+                .row {
+                    .educacion-item {
+                        width: 100%;
+                        
+                        .item-content {
+                            h2 {
+                                font-size: 2.5vw;
+                            }
+
+                            h3 {
+                                font-size: 2vw;
                             }
                         }
                     }

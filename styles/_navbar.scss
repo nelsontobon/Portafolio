@@ -1,49 +1,177 @@
-/* menu-navegacion */
-.nav {
+.header {
     position: fixed;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    z-index: 70;
+    align-items: center;
     width: 100%;
-    margin: 0;
-    padding: 1vw 2vw;
+    height: $hd_height_s;
+    z-index: 70;
 
-    .marca {
-        font-family: $ft-Oxygen-mono;
-        font-size: 2vw;
+    &>div {
+        margin: 15px;
+
+        .marca {
+            font-family: $ft-Oxygen-mono;
+            font-size: 3vw;
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: orange;
+                border-bottom: 1px solid orange;
+
+            }
+        }
     }
 
-    li,
-    a {
-        display: inline-block;
-        margin: 1vw;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: $ft-Oxygen-mono;
-        font-weight: 500;
-        font-size: 1vw;
+    .menu-lista {
+        display: none;
+        position: absolute;
+        background-color: $cl-blueOscuro;
+        width: 100%;
+        height: $hd_height_s_list;
+        top: 52px;
+
+        &>ul {
+
+            li,
+            a {
+                display: block;
+                margin: 16px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: $ft-Oxygen-mono;
+                font-weight: 500;
+                font-size: 16px;
+                color: white;
+                transition: .5s ease;
+            }
+
+            li.active {
+                border-bottom: 1px solid orange;
+            }
+
+            li.active a,
+            li:hover a {
+                color: orange;
+            }
+        }
+    }
+
+
+    .menu-check {
+        display: none;
+
+        &:checked {
+            &~.menu-label {
+                display: none;
+            }
+
+            &~.menu-label1 {
+                display: block;
+            }
+
+            &~.menu-lista {
+                display: block;
+                position: absolute;
+
+                animation: menu-lista-visible 0.5s linear;
+                animation-direction: normal;
+                animation-fill-mode: forwards;
+
+                top: 52px;
+                z-index: 99;
+            }
+        }
+    }
+
+    .menu-label {
+        cursor: pointer;
         color: white;
-        transition: .5s ease;
+        i:hover{
+            color: orange;
+            transition: 0.2;
+            transform: scale(1.5);
+        
+        }
     }
 
-    li.active {
-        border-bottom: 1px solid orange;
+    .menu-label1 {
+        display: none;
+        color: white;
+        i:hover{
+            color: orange;
+            transition: 0.2;
+            transform: scale(1.5);
+        
+        }
     }
 
-    li.active a,
-    li:hover a {
-        color: orange;
+
+    @keyframes menu-lista-visible {
+        from {
+            left: 100%;
+        }
+
+        to {
+            left: 0%;
+        }
     }
+
 }
 
-@media (max-width: 768px) {
-    .nav {
 
-        li,
-        a {
-            margin: 0.5vw;
-            font-size: 2vw; 
+/* ------------ Vista escritorio ------------*/
+
+@media (min-width: 768px) {
+
+    .header {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        width: 100%;
+
+        &>div {
+            .marca {
+                font-family: $ft-Oxygen-mono;
+                font-size: 1.9vw;
+                color: white;
+
+
+
+            }
+        }
+
+        .menu-lista {
+            display: flex;
+            position: initial;
+            background-color: transparent;
+            height: 80px;
+            width: 100%;
+
+            &>ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: 80px;
+                width: 100%;
+
+                li,
+                a {
+                    font-size: 1.2vw;
+                }
+            }
+        }
+
+        .menu-label1,
+        .menu-label,
+        .menu-check {
+            display: none;
         }
     }
 }
+
+/* ------------FIN Vista escritorio ------------*/
